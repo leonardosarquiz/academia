@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.sectionone {
+    background-image: url(../images/foto1.png);
+     height: 100vh;
+     width: 100%;
+    
+}
+.menu {
+    height: 116px;
+    width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   
+  
+}
+.logo {
+    height: 116px;
+    display: flex;
+    align-items: center;
+}
+.logoimg {
+    max-height: 69px;
+    max-width: 173px;
+}
+.listamenu  {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    justify-content: space-between;
+
+}
+.listamenu li a {
+color: #FDFDFD;
+font-family: 'Bai Jamjuree';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+
+
+letter-spacing: -0.03em
+}
+.listamenu li a:hover {
+    color: #ccc;
+}
+
+/* conteudo */
+.conteudo {
+    display: block;
+    padding-right: 68px;
+    padding-top: 130px;
+    
+}
+.conteudo1 {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.conteudo1 h1 {
+    font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 89px;
+text-align: right;
+letter-spacing: -0.03em;
+
+color: #FDFDFD;
+padding-top: 60px;
+}
+.titulo1 h4 {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    /* identical to box height */
+    
+    text-align: right;
+    letter-spacing: -0.06em;
+    text-transform: lowercase;
+    
+    color: #FDFDFD;
+    padding-right: 8px;
+    
+}
+.titulo1 h4::after {
+    display: flex;
+    content: "";
+    border: 2px solid #FDFDFD;
+    margin-top: 7px;
+    width: 100%;
+    
+}
+
+.btn {
+width: 295px;
+height: 87px;
+background: linear-gradient(180deg, rgba(8, 58, 153, 0.67) 0%, #011F57 100%);
+border-radius: 15px;
+border: none;
+
+font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 45px;
+cursor: pointer;
+letter-spacing: -0.06em;
+text-transform: lowercase;
+color: #FDFDFD;
+
+
+}
+.btn:hover {
+    color: #ccc;
+   
+}
+.btncontainer {
+    padding-top: 40px;
+}
+
+

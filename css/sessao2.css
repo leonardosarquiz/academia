@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.sessao2 {
+    background-color:#030A3C ;
+   overflow: hidden;
+    padding-bottom: 50px;
+}
+.logoatividade {
+    display: flex;
+   justify-content: center;
+   padding-top: 45px;
+   padding-bottom: 60px;
+   
+}
+.imgativadades {
+    max-height:326px ;
+    max-width: 393px;
+    border-radius: 12px 12px 0px 0px;
+}
+.container-atividades  {
+    display: flex;
+    position: relative;
+
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box-atividades {
+    background: linear-gradient(180deg, #9C33B8 0%, #5713A9 100%);
+    height: 207px;
+    border-radius: 0px 0px 12px 12px;
+    margin-top: -4px;
+}
+.box-containers {
+    max-width: 393px;
+    margin-left: 20px;
+}
+.box-containers img {
+    object-fit: cover;
+}
+.titulo-box {
+color: #FDFDFD;
+font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-align: center;
+letter-spacing: -0.03em;
+padding-top: 23px;
+}
+.descricao-box {
+padding-top: 20px;
+padding-left: 50px;
+padding-right: 40px;
+text-align: center;
+font-family: 'Bai Jamjuree';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #FDFDFD;
+
+}
+.buttons {
+    padding-top: 35px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btns {
+    width: 85px;
+height: 85px;
+background: linear-gradient(180deg, #A660DB 0%, #075AFE 100%);
+border-radius: 50%;
+color: #fff;
+font-size: 42px;
+border: none;
+margin: 10px;
+cursor: pointer;
+
+}
+.btns:hover {
+    color: #ccc;
+
+}
+/*musculação*/
