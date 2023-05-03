@@ -306,17 +306,18 @@ display: flex;
         font-size: 50px;
         line-height: 70px;
     }
+    .btn {
+        width: 190px;
+        height: 67px; 
+        font-size: 23px;
+    }
 }
 
 @media (max-width: 380px) {
     .conteudo1 h1 {
         font-size: 50px;
     }
-    .btn {
-        width: 215px;
-        height: 67px; 
-        font-size: 28px;
-    }
+   
 }
 
 
