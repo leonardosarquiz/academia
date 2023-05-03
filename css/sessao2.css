@@ -10,7 +10,13 @@
 .sessao2 {
     background-color:#030A3C ;
    overflow: hidden;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
+    width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-right: 20px;
+
+ 
 }
 .logoatividade {
     display: flex;
@@ -24,29 +30,49 @@
     max-width: 393px;
     border-radius: 12px 12px 0px 0px;
 }
+
 .container-atividades  {
     display: flex;
     position: relative;
-
-    margin-right: 20px;
     width: 100%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  overflow-x: scroll;
+   cursor: pointer;
+    padding-right: 20px;
+    padding-bottom: 30px;
+   margin-left: 20px;
+
 }
+.container-atividades::-webkit-scrollbar  {
+    width: 0px;
+    height: 10px;
+    background-color: #030A3C;
+    border-radius: 50%;
+    
+ 
+
+}
+.container-atividades::-webkit-scrollbar-thumb {
+   background:  linear-gradient(180deg, #A460DB 53.33%, #085AFE 100%);
+border-radius: 30px;
+   
+}
+
+
 
 .box-atividades {
     background: linear-gradient(180deg, #9C33B8 0%, #5713A9 100%);
     height: 207px;
     border-radius: 0px 0px 12px 12px;
     margin-top: -4px;
+    width: 393px;
 }
 .box-containers {
-    max-width: 393px;
+    width: 393px;
     margin-left: 20px;
 }
 .box-containers img {
     object-fit: cover;
+    
 }
 .titulo-box {
 color: #FDFDFD;
@@ -97,4 +123,96 @@ cursor: pointer;
     color: #ccc;
 
 }
+.voltarbtn .proximobtn {
+    transform: translateY(-100%);
+}
+
+.item,
+.current-item {
+  transition: all 0.5s ease; /* adiciona uma transição de 0.5 segundos para todas as propriedades */
+}
+
+.item {
+  /* estilo padrão para os itens */
+}
+
+.current-item {
+  /* estilo para o item atual */
+}
+
 /*musculação*/
+@media (max-width: 1100px) {
+   
+    .imgativadades {
+      
+    }
+    .titulo-box {
+        font-size: 23px;
+        padding-top: 3px;
+    }
+    .descricao-box {
+        font-size: 14px;
+        line-height: 23px;
+        padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 7px;
+    }
+    .box-atividades {
+      height: 200px;
+    }
+    .btns {
+        width: 55px;
+        height: 55px;
+        font-size: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .box-containers {
+      width: 100%;
+    }
+}
+    @media (max-width: 450px) {
+        .item  {
+            margin-left: 35px;
+        }
+        .item1 {
+            margin-left: 0px;
+        }
+        .container-atividades {
+            margin-left: 10px;
+        }
+        .logoatividade {
+            display: flex;
+            justify-content: center;
+        }
+        .sessao2 {
+            padding-right: 0px;
+        }
+        .descricao-box {
+            font-size: 20px;
+            line-height: 29px;
+            padding-left: 20px;
+        padding-right: 15px;
+        padding-top: 7px;
+        }
+        .titulo-box {
+            font-size: 29px;
+            padding-top: 3px;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .item {
+        margin-left: 10px;
+        }
+        .imgativadades  {
+            width: 320px;
+        }
+        .box-atividades {
+            width: 320px;
+        }
+        .logoimgsessao2 {
+            max-width: 350px;
+        }
+    }
+  

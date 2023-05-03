@@ -1,7 +1,7 @@
-import sessaoDois from './sessao2.js';
+import sessaoQuatro from './sessao4.js';
+import dropDown from './dropdownmenu.js';
+import initscrollSuave from './scrollsuave.js';
 
-sessaoDois();
-
-
-
-
+initscrollSuave();
+dropDown();
+sessaoQuatro();

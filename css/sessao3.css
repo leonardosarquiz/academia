@@ -8,6 +8,7 @@
 }
 .sessao3 {
   background-color:  #030A3C;
+  overflow: hidden;
   
 }
 .sessaotreinadores {
@@ -21,10 +22,25 @@
 }
 .container-treinadores {
   display: flex;
- margin-left: 10px;
-
+  overflow-x: scroll;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+ 
 }
-
+.container-treinadores::-webkit-scrollbar {
+  width: 10px;
+    height: 10px;
+    background-color: #030A3C;
+    border-radius: 50%;
+}
+.container-treinadores::-webkit-scrollbar-thumb {
+  background:  linear-gradient(180deg, #A460DB 53.33%, #085AFE 100%);
+  border-radius: 30px;
+     
+}
 .treinadores {
   width: 485px;
 height: 542px;
@@ -35,6 +51,7 @@ border-radius: 80px 80px 0px 0px;
 cursor: pointer;
 transition: transform 0.5s ease-out; 
 position: relative;
+margin-left: 10px;
 
 }
 .treinadores:before {
@@ -59,6 +76,15 @@ position: relative;
 .treinadores:hover:before {
   opacity: 1;
 }
+.imgstreinadores {
+ height: 532px;
+
+}
+.positiontreinador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .bbb {
   display: flex;
   justify-content: center;
@@ -73,6 +99,7 @@ position: relative;
 .nn3 {
   display: block;
   width: 100%;
+  
   text-align: center;
   opacity: 0;
  height: 100%;
@@ -116,5 +143,57 @@ cursor: pointer;
   cursor: pointer;
 
 }
-
+@media (max-width: 450px) {
+  .treinadores {
+    width: 380px;
+  height: 542px;
+  
+  background: #030A3C;
+  border: 5px solid #A65FDA ;
+  border-radius: 80px 80px 0px 0px;
+  cursor: pointer;
+  transition: transform 0.5s ease-out; 
+  position: relative;
+  margin-left: 10px;
+  
+  }
+  .imgstreinadores {
+    width: 380px;
+  }
+  .bbb {
+    width: 380px;
+  }
+  .img3 {
+    padding-right: 20px;
+  }
+  .treinadorestitleimg {
+    width: 380px;
+    height: 64px;
+  }
+  .treinadorestitulo {
+    padding-bottom: 15px;
+    padding-top: 40px;
+  }
+  .sessao4 {
+    padding-bottom: 100px;
+  }
+ 
+}
+@media (max-width: 380px) {
+  .treinadores {
+    width: 320px;
+  }
+  .imgstreinadores {
+    width: 320px;
+  }
+  .bbb {
+    width: 320px;
+  }
+  .container-treinadores {
+    padding-bottom: 25px;
+  }
+  .treinadorestitleimg {
+    width: 350px;
+  }
+}
 

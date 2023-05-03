@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Gym</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,20 +19,23 @@
 
 
 
-                <nav>
-                    <ul class="listamenu">
-                        <li><a href="#atividades">Atividades</a></li>
-                        <li><a href="">Treinadores</a></li>
-                        <li><a href="">Planos</a></li>
-                        <li><a href="">Newsletter</a></li>
-                        <li><a href="">Contato</a></li>
+                <nav class="js-menu">
+                    <div class="btn-menu-mobile"> <button data-menu="button" aria-expanded="false" aria-controls="menu">
+                            Menu
+                        </button></div>
+                    <ul class="listamenu menu" data-menu="list" id="menu">
+                        <li class="li1"><a href="#atividades">Atividades</a></li>
+                        <li><a href="#treinadoressessao">Treinadores</a></li>
+                        <li><a href="#planos4">Planos</a></li>
+                        <li><a href="#novidades">Newsletter</a></li>
+                        <li><a href="#contato1">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
 
-        <div class="conteudo">
+        <div class="conteudo js-scroll">
             <div class="titulo1 conteudo1">
                 <h4>você está pronto para</h4>
             </div>
@@ -42,11 +47,14 @@
         </div>
     </div>
 
-    <section class="sessao2" id="atividades">
-        <div class="logoatividade"><img src="images/atividadeslogo.png" alt="atividadeslogo"></div>
+    <section class="sessao2 js-scroll" id="atividades">
+        <h2>
+            <div class="logoatividade"><img src="images/atividadeslogo.png" alt="atividadeslogo" class="logoimgsessao2"></div>
+        </h2>
+
 
         <div class="container-atividades">
-            <div class="box-containers">
+            <div class="box-containers item1">
                 <img src="images/atividades1.png" alt="atividades1" class="imgativadades">
                 <div class="box-atividades">
                     <p class="titulo-box">MUSCULAÇÃO</p>
@@ -58,7 +66,7 @@
 
 
 
-            <div class="box-containers">
+            <div class="box-containers item">
                 <img src="images/atividade2.png" alt="atividades2" class="imgativadades">
                 <div class="box-atividades">
                     <p class="titulo-box">MUAY THAIN</p>
@@ -71,7 +79,7 @@
 
 
 
-            <div class="box-containers">
+            <div class="box-containers item">
                 <img src="images/FOTO3.png" alt="foto3" class="imgativadades">
                 <div class="box-atividades">
                     <p class="titulo-box">SPINNING</p>
@@ -84,7 +92,7 @@
 
 
 
-            <div class="box-containers">
+            <div class="box-containers item">
                 <img src="images/foto4.png" alt="foto3" class="imgativadades">
                 <div class="box-atividades">
                     <p class="titulo-box">YOGA</p>
@@ -96,7 +104,7 @@
 
 
 
-            <div class="box-containers">
+            <div class="box-containers item">
                 <img src="images/foto5.png" alt="foto3" class="imgativadades">
                 <div class="box-atividades">
                     <p class="titulo-box">ALONGAMENTO E RPF</p>
@@ -108,7 +116,7 @@
 
 
 
-            <div class="box-containers">
+            <div class="box-containers item">
                 <img src="images/foto6.png" alt="foto3" class="imgativadades">
                 <div class="box-atividades">
                     <p class="titulo-box">CROSS FIT</p>
@@ -119,26 +127,22 @@
         </div>
 
 
+
         </div>
 
-
-
-        <div class="buttons">
-            <button class="voltarbtn btns">←</button>
-            <button class="proximobtn btns">→</button>
-        </div>
     </section>
 
-
-    <section class="sessao3">
+    <section class="sessao3 js-scroll" id="treinadoressessao">
         <div class="sessaotreinadores treinadora1">
 
 
-            <div class="treinadorestitulo"> <img src="images/treinadores3.png" alt="treinadores"></div>
+            <h2>
+                <div class="treinadorestitulo"> <img src="images/treinadores3.png" alt="treinadores" class="treinadorestitleimg"></div>
+            </h2>
 
             <div class="container-treinadores">
                 <div class="treinadores">
-                    <img src="images/treinador1.png" alt="treinadora1">
+                    <img src="images/treinador1.png" alt="treinadora1" class="imgstreinadores">
                     <div class="bbb">
                         <div class="nn3">
                             <h5 class="nametreinador">Amanda Melo</h5>
@@ -148,26 +152,212 @@
                     </div>
                 </div>
 
-                <div class="container-treinadores">
-                    <div class="treinadores">
-                        <img src="images/treinador1.png" alt="treinadora1">
-                        <div class="bbb">
-                            <div class="nn3">
-                                <h5 class="nametreinador">Amanda Melo</h5>
-                                <button class="instabtn"><img src="images/instagram.png" alt="instagram"></button>
-                                <button class="facebtn"><img src="images/facebook.png" alt="face"></button>
+
+                <div class="treinadores">
+                    <div class="positiontreinador"> <img src="images/treinador2.png" alt="treinadora1" class="imgstreinadores"></div>
+                    <div></div>
+                    <div class="bbb">
+                        <div class="nn3">
+                            <h5 class="nametreinador">Paulo Silva</h5>
+                            <button class="instabtn"><img src="images/instagram.png" alt="instagram"></button>
+                            <button class="facebtn"><img src="images/facebook.png" alt="face"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="treinadores">
+                    <div class="positiontreinador img3"> <img src="images/treinador3.png" alt="treinadora3" class="imgstreinadores t3"></div>
+                    <div></div>
+                    <div class="bbb">
+                        <div class="nn3">
+                            <h5 class="nametreinador">Bruna Duarte</h5>
+                            <button class="instabtn"><img src="images/instagram.png" alt="instagram"></button>
+                            <button class="facebtn"><img src="images/facebook.png" alt="face"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="treinadores">
+                    <div class="positiontreinador"> <img src="images/treinador5.png" alt="treinadora5" class="imgstreinadores t3"></div>
+                    <div></div>
+                    <div class="bbb">
+                        <div class="nn3">
+                            <h5 class="nametreinador">Isabela Diniz</h5>
+                            <button class="instabtn"><img src="images/instagram.png" alt="instagram"></button>
+                            <button class="facebtn"><img src="images/facebook.png" alt="face"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="treinadores">
+                    <div class="positiontreinador"> <img src="images/treinador4.png" alt="treinadora4" class="imgstreinadores t3"></div>
+                    <div></div>
+                    <div class="bbb">
+                        <div class="nn3">
+                            <h5 class="nametreinador">Crisitan Vargas</h5>
+                            <button class="instabtn"><img src="images/instagram.png" alt="instagram"></button>
+                            <button class="facebtn"><img src="images/facebook.png" alt="face"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sessao4 js-scroll" id="planos4">
+        <h2 class="planostitle"><img src="images/planos.png" alt="planostitle"></h2>
+
+        <div class="containerplanos">
+
+            <div class="planosdiv">
+                <ul class="listaplanos">
+                    <h5 class="titlelista">SILVER</h5>
+                    <li>✔ Área de musculação e aeróbicos. </li>
+                    <li>✔ área de spinning. </li>
+                    <li>✔ Horários livres. </li>
+                    <li>✔ 30 dias para congelamento. </li>
+                    <div class="planobtns"><button class="btncomprar">R$ 199,99</button></div>
+                </ul>
+            </div>
+
+
+            <div class="planosdiv">
+                <ul class="listaplanos">
+                    <h5 class="titlelista">GOLD</h5>
+                    <li>✔ Área de musculação e aeróbicos.</li>
+                    <li>✔ área de spinning. </li>
+                    <li>✔ Horários livres. </li>
+                    <li>✔ 30 dias para congelamento. </li>
+                    <li>✔ 1 aula coletiva na semana. </li>
+                    <li>✔ Liberado trazer 1 amigo no mês. </li>
+                    <div class="planobtns"><button class="btncomprar">R$ 199,99</button></div>
+                </ul>
+            </div>
+
+            <div class="planosdiv">
+                <ul class="listaplanos platinum">
+                    <h5 class="titlelista">PLATINUM</h5>
+                    <li>✔ Área de musculação e aeróbicos.</li>
+                    <li>✔ área de spinning. </li>
+                    <li>✔ Horários livres. </li>
+                    <li>✔ 30 dias para congelamento. </li>
+                    <li>✔ 1 aula coletiva na semana. </li>
+                    <li>✔ Liberado trazer 1 amigo no mês. </li>
+                    <li>✔ Treino orientado pelo treinador. </li>
+
+                    <div class="planobtns"><button class="btncomprar">R$ 199,99</button></div>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="sessao5 js-scroll" id="novidades">
+        <div class="novidades">
+            <div class="titlenovidades">
+                <h4>Receba novidades<br> e promoções<br> exclusivas.</h4>
+            </div>
+
+            <div class="psn"><button>CADASTRE-SE</button></div>
+            <div class="areacadastro">
+                <input type="email" placeholder="Seu e-mail" class="psn">
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="sessao6 js-scroll">
+        <div class="logoimgcol"><img src="images/logocor.png" alt="logo"></div>
+
+        <div class="container-contatos">
+            <div class="container-redesociais">
+                <div class="title-social">
+                    <p class="predesocial">Acompanhe as redes sociais</p>
+                </div>
+                <div class="rede-social">
+                    <img src="images/facebranco.png" alt="facebook" class="img1">
+                    <img src="images/004-instagram.png" alt="">
+                </div>
+            </div>
+
+            <div class="container-right">
+
+                <nav class="container-links">
+                    <ul class="lista-nav">
+                        <li><a href=""> LINKS</a></li>
+                        <li><a href="">Atividades</a></li>
+                        <li><a href="">Treinos</a></li>
+                        <li><a href="">Planos</a></li>
+                        <li><a href="">Newsletter</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="infos-position" id="contato1">
+                    <div class="infos-container">
+                        <div class="infos">
+                            <p class="p-infos">Contato e informações</p>
+
+                            <div class="container-infos">
+                                <img src="images/tel.png" alt="telefone">
+                                <div class="tel">
+                                    <p>Telefone</p>
+                                    <div class="abc">
+                                        <p>(51) 9 8116-1944</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="infos-horario">
+
+                            <div class="container-infos">
+                                <img src="images/tel.png" alt="telefone">
+                                <div class="tel">
+                                    <p>Horário de funcionamento</p>
+                                    <div class="abcd">
+                                        <p>06:00 - 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="infos-horario">
+
+                            <div class="container-infos">
+                                <img src="images/tel.png" alt="telefone">
+                                <div class="tel">
+                                    <p>Endereço</p>
+                                    <div>
+                                        <p class="ende">Rua Berlim, 174, Maurício Cardoso<br> -Novo Hamburgo.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
-
-
-
-
-
         </div>
     </section>
+
+    <footer>
+        <p class="p1">All Right Reserved</p>
+        <p class="p2">Desenvolvido por Groovy Social</p>
+    </footer>
 
     <script type="module" src="scripts/script.js"></script>
 </body>

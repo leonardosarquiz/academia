@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  
+}
+.sessao4 {
+  background-color:  #030A3C;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.planostitle {
+  display: flex;
+  width: 100%;
+  justify-content: center; 
+padding-bottom: 30px;}
+  .containerplanos {
+    display: flex;
+    padding-top: 100px;
+    padding-right: 30px;
+   
+  }
+  .platinum {
+ 
+  }
+  .planosdiv {
+    width: 100%;
+    height: 654px;
+    border-radius: 20px;
+    border: 5px solid #A65FDA ;
+   margin-left: 30px;
+   display: flex;
+   justify-content: center;
+   transition: transform 0.5s ease-out; 
+   position: relative;
+   z-index: 1;
+  }
+  .planosdiv:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #9A31B7 0%, #5612A7 100%);
+    border-radius: 12px;;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+   
+  }
+
+  .planosdiv:hover:before {
+    opacity: 1;
+  }
+  .planosdiv:hover {
+    transform: translateY(-25px);
+    
+  }
+  .listaplanos {
+    padding-top: 55px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .listaplanos li {
+    font-family: 'Bai Jamjuree';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 99.5%;
+letter-spacing: -0.06em;
+text-transform: lowercase;
+color: #FDFDFD;
+padding-bottom: 24px;
+  }
+
+  .titlelista {
+    font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 64px;
+letter-spacing: -0.03em;
+color: #FDFDFD;
+text-align: center;
+padding-bottom: 42px;
+  }
+  .btncomprar {
+    width: 177px;
+    height: 55px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #030A3C;
+    color: #FDFDFD;
+    font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.06em;
+text-transform: uppercase;
+opacity: 0;
+
+
+  }
+  .btnc {
+    width: 177px;
+    display: flex;
+   justify-content: center;
+
+  
+  
+   
+  }
+  .planosdiv:hover .btncomprar {
+    opacity: 1;
+  }
+  .planobtns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 995px) {
+    .containerplanos {
+    padding-bottom: 20px;
+      overflow-x: scroll;
+    }
+    .containerplanos::-webkit-scrollbar {
+      width: 4px;
+      height: 10px;
+      background-color: #030A3C;
+      border-radius: 50%;
+    }
+    .containerplanos::-webkit-scrollbar-thumb {
+      background:  linear-gradient(180deg, #A460DB 53.33%, #085AFE 100%);
+border-radius: 30px;
+    }
+    .listaplanos li {
+      font-size: 17px;
+      padding-left: 15px;
+    }
+    .titlelista {
+      font-size: 40px;
+    }
+ 
+  }
+  @media (max-width: 450px) {
+    .planostitle {
+      padding-bottom: 0px;
+    }
+    .containerplanos {
+      padding-top: 40px;
+    }
+    .titlelista {
+      font-size: 30px;
+    }
+    .planosdiv {
+      height: 610px;
+    }
+    .planobtns {
+      padding: 10px;
+    }
+    .listaplanos li {
+      letter-spacing: 0.03em;
+    }
+    .listaplanos {
+      padding-top: 0px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    
+    .btncomprar {
+      width: 150px;
+      height: 50px;
+    }
+  }

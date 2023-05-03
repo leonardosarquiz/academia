@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+}
+.sessao5 {
+  background-color:  #030A3C;
+  display: block;
+  overflow: hidden;
+  padding-top: 30px;
+  
+ 
+}
+.novidades {
+background-image: url(../images/Group8.png);
+width: 755px;
+width: 1530px;
+overflow: hidden;
+
+
+
+}
+
+.titlenovidades {
+  position: absolute;
+ display: flex;
+ height: 755px;
+ justify-content: start;
+ align-items: center;
+ margin-left: 60px;
+ overflow: hidden;
+}
+
+.titlenovidades h4 {
+  font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 64px;
+letter-spacing: -0.03em;
+color: #fff;
+
+}
+
+.areacadastro {
+  height: 755px;
+display: flex;
+align-items: center;
+padding-top: 300px;
+width: 100%;
+justify-content: center;
+}
+.areacadastro input {
+  width: 464px;
+  height: 52px;
+  border: 3px solid #FDFDFD;
+border-radius: 10px;
+padding: 10px;
+background-color:transparent ;
+color: #fff;
+font-size: 17px;
+
+}
+.areacadastro input::placeholder {
+ color: #fff;
+}
+.areacadastro input:focus {
+  outline: none;
+}
+.psn {
+  height: 755px;
+display: flex;
+align-items: end;
+position: absolute;
+width: 100%;
+justify-content: center;
+padding-bottom: 100px;
+}
+.psn button {
+  cursor: pointer;
+  width: 203px;
+height: 65px;
+background: linear-gradient(180deg, rgba(8, 58, 153, 0.67) 0%, #011F57 100%);
+border-radius: 15px;
+border: none;
+font-family: 'Audiowide';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.06em;
+text-transform: uppercase;
+
+color: #FDFDFD;
+}
+.psn button:hover {
+  color: #ccc;
+}
+ @media (max-width: 950px)  {
+  .novidades {
+    background-image: none;
+    background: linear-gradient(180deg, #A460DB 53.33%, #085AFE 100%);
+    border-radius: 30px;
+    height: 350px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+  }
+  .titlenovidades {
+    height: 350px;
+    margin-left: px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+
+  }
+  .areacadastro {
+    height: 350px;
+    padding-top: 10px;
+    
+    align-items: center;
+    width: 100%;
+    
+  }
+  .psn {
+    height: 350px;
+    margin-top: 70px;
+    justify-content: flex-end;
+    padding-right: 130px;
+  }
+}
+@media (max-width: 450px) {
+  .novidades {
+    height: 600px;
+  }
+  .psn {
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    padding-right: 0px;
+    align-items: flex-end;
+  }
+  .areacadastro {
+    height: 500px;
+    margin-top: 40px;
+  
+  }
+  .areacadastro input {
+    width: 320px;
+  }
+}
+@media (max-width: 380px) {
+  .psn button {
+    width: 198px;
+height: 57px;
+  }
+}

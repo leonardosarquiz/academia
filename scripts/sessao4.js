@@ -1,8 +1,8 @@
-export default function sessaoDois() {
-  const carousel = document.querySelector('.sessao2');
-  const images = carousel.querySelector('.container-atividades');
-  const prevBtn = document.querySelector('.voltarbtn');
-  const nextBtn = document.querySelector('.proximobtn');
+export default function sessaoQuatro() {
+  const carousel = document.querySelector('.sessao4');
+  const images = carousel.querySelector('.containerplanos');
+  const prevBtn = document.querySelector('.esq');
+  const nextBtn = document.querySelector('.abc');
 
   let imageIndex = 0;
 
