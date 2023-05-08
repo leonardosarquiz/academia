@@ -12,6 +12,7 @@
 }
 .sectionone {
     background: url(../images/foto1l.png);
+     background-size: cover;
   width: 100%;
      height: 100vh;
      overflow: hidden;
@@ -239,6 +240,7 @@ display: flex;
    
     .sectionone {
         background: url(../images/Banner_principal-mobile.png);
+         background-size: cover;
       width: 100%;
          height: 380px;
          overflow: hidden;
